@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con Validaciones Dinámicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <form id="registroForm">
+            <label>Nombre:</label>
+            <input type="text" id="nombre">
+            <span class="error" id="errorNombre"></span>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" id="correo">
+            <span class="error" id="errorCorreo"></span>
+
+            <label>Contraseña:</label>
+            <input type="password" id="contrasena">
+            <span class="error" id="errorContrasena"></span>
+
+            <label>Confirmar Contraseña:</label>
+            <input type="password" id="confirmarContrasena">
+            <span class="error" id="errorConfirmarContrasena"></span>
+
+            <label>Edad:</label>
+            <input type="number" id="edad">
+            <span class="error" id="errorEdad"></span>
+
+            <div class="botones">
+                <button type="submit" id="enviarBtn" disabled>Enviar</button>
+                <button type="reset">Reiniciar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
